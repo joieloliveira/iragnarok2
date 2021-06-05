@@ -24,9 +24,13 @@
     color: #000000;
     font-weight: 600;
 }
+.linksTop a:nth-child(7):hover{
+    opacity: 0.6;
+}
 .linksTop a:hover{
     text-decoration: none;
     color: #FF4E1A;
+    transition: 0.6s;
 }
 /*===header===*/
 .header .carouselMobile{
@@ -60,7 +64,7 @@
     width: 260px;
     height: 80px;
     margin: 10px 15px 10px 15px;
-    box-shadow: 2px 8px 4px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 20%);
     z-index: 9;
 }
 .boxLinks .box1234 .box1234Links .boxtxt{
@@ -74,10 +78,26 @@
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    font-size: 95%;
 }
-.infoVotodoacao .Votodoacao img{
+.infoVotodoacao .icons img:hover{
+    opacity: 0.6;
+    transition: 1s;
+}
+.infoVotodoacao .Votodoacao button{
+    outline: none;
+    width: 268px; 
+    height: 235px; 
     margin-top: -40px;
     margin-left: 20px;
+    border-radius: 1.5rem;
+    border: none;
+    background-color: white;
+}
+.infoVotodoacao .Votodoacao button:hover{
+    opacity: 0.7;
+    transition: 1s;
+    cursor: pointer
 }
 .infoVotodoacao .info .icons{
     display: flex;
@@ -114,13 +134,14 @@
     justify-content: center;
     flex-direction: column;
     margin: 0 5px 0 5px;
-    background-color: #F3F3F3;
+    background-color: #ebe6e6;
 }
 .loja .lojaSlide{
     width: 1150px;
 }
 .carrosselItem p{
     text-align: center;
+    font-size: 90%;
 }
 .carrosselItem h6{
     color: #fd3f05;
@@ -174,8 +195,8 @@
 }
 .ranking .rankingBox .card .cardBody .cardBodyStats .cardBodyStatsTxt{
     display: flex;
-    align-items: center;
     flex-direction: column;
+    margin-left: 5px;
 }
 /*===guerra===*/
 .guerra{
@@ -194,7 +215,8 @@
     display: flex;
     align-items: center;
     border-radius: 1.5rem;
-    width: 450px;
+    font-size: 90%;
+    width: 410px;
     height: 200px;
     background-color: white;
     margin-bottom: -40px;
@@ -243,15 +265,27 @@
 }
 .footer .footerBox1 .footerBox1Raking{
     margin: 25px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
 }
-.footer .footerBox1 .footerBox1Raking p{
-    margin: 0;
+.footer .footerBox1 .footerBox1Raking a{
+    color: white;
+    text-decoration: none;
+    margin: 3px 0 3px 0;
+}
+.footer .footerBox1 .footerBox1Raking a:hover{
+    color: #FF4E1A;
+    transition: 0.8s;
 }
 .footer .footerBox1 .footerBox1Sociais{
     margin: 25px 0 0 80px;
 }
 .footer .footerBox1 .footerBox1Sociais img{
     margin: 5px
+}
+.footer .footerBox1 .footerBox1Sociais img:hover{
+    opacity: 0.6;
+    transition: 0.8s;
 }
 
 .footer .footerBox2{
@@ -271,6 +305,10 @@
     align-items: center;
     justify-content: center;
     width: 44%;
+}
+.footer .footerBox2 .footerBox2Logo img:hover{
+    opacity: 0.6;
+    transition: 0.8s;
 }
 .footer .footerBox2 .footerBox2txt{
     display: flex;
