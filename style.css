@@ -493,6 +493,9 @@
     .header .carouselMobile .chibi{
         width: 400px;
     }
+    .boxLinks .boxLogoMobile{
+        margin-top: -65px;
+    }
     .boxLinks .boxLogoMobile .logo_mobile{
         width: 400px;
     }
@@ -569,7 +572,58 @@
     }
 }
 @media(max-width: 424px){
-    
+    .boxLinks .boxLogoMobile .logo_mobile{
+        width: 350px;
+    }
+    .infoVotodoacao .Votodoacao button{
+        width: 168px; 
+        height: 135px; 
+    }
+    .infoVotodoacao .Votodoacao button img{
+        width: 168px; 
+        height: 135px; 
+    }
+    .infoVotodoacao .info .icons .jogadoresServidor P:nth-child(1){
+        font-size: 70%;
+    }
+    .infoVotodoacao .info .icons .jogadoresServidor P:nth-child(2){
+        font-size: 110% !important;
+    }
+    .infoVotodoacao .info .icons #jogadoresServidor P:nth-child(1){
+        font-size: 70% !important;
+    }
+    .infoVotodoacao .info .icons #jogadoresServidor P:nth-child(2){
+        font-size: 140% !important;
+    }
+    .cardGuerra{
+        width: 175px !important;
+        height: 185px !important;
+    }
+    .cardGuerra .cardGuerraInterno p{
+        font-size: 90%;
+    }
+    .guerra .guerraBox .cardGuerra .cardGuerraInterno .textoGuerra p{
+        margin: 0 !important;
+        margin-top: 0px !important;
+    }
+    .guerra .guerraBox .cardGuerra .cardGuerraInterno #textoGuerra p{
+        margin: 0 !important;
+        margin-top: 90px !important;
+    }
+    .cardGuerra .cardGuerraInterno img:nth-child(1){
+        margin: 0;
+        margin-bottom: -100px !important;
+    }
+    .cardGuerra .cardGuerraInterno img:nth-child(2){
+        margin: 0 !important;
+        margin-bottom: -10px !important
+    }
+    .footer .footerBox1Raking a{
+        font-size: 80%;
+    }
+    .footer .footerBox1Raking{
+        margin-bottom: 20px !important;
+    }
 }
 
 
