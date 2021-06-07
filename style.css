@@ -6,6 +6,9 @@
     font-family: Gadugi Bold;
     src: url(fonts/gadugi-bold.ttf);
 }
+.buttonSlidebar{
+    display: none;
+}
 /*===linksTop===*/
 .linksTop{
     display: flex;
@@ -136,9 +139,6 @@
     margin: 0 5px 0 5px;
     background-color: #ebe6e6;
 }
-.loja .lojaSlide{
-    width: 1150px;
-}
 .carrosselItem p{
     text-align: center;
     font-size: 90%;
@@ -154,46 +154,43 @@
     flex-direction: column;
     padding-bottom: 40px;
 }
-.ranking .rankingBox{
+.ranking .rankingCarrosel{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.ranking .rankingBox .card{
+.ranking .rankingCarrosel .card{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     border-radius: 0.5rem;
-    margin: 0 26px 0 26px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    width: 235px;
-    height: 220px;
     overflow: hidden;
+    margin: 0 5px 0 5px;
 }
-.ranking .rankingBox .card p{
+.ranking .rankingCarrosel .card p{
     margin: 0;
 }
-.ranking .rankingBox .card .cardBody{
+.ranking .rankingCarrosel .card .cardBody{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.ranking .rankingBox .card .cardBody .cardBody3Stats{
+.ranking .rankingCarrosel .card .cardBody .cardBody3Stats{
     display: flex;
     flex-direction: column;
     margin-left: 25px;
 }
-.ranking .rankingBox .card .cardBody .cardBodyStats{
+.ranking .rankingCarrosel .card .cardBody .cardBodyStats{
     display: flex;
     align-items: center;
 }
-.ranking .rankingBox .card .cardBody .cardBodyStats .cardBodyStatsImg{
+.ranking .rankingCarrosel .card .cardBody .cardBodyStats .cardBodyStatsImg{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.ranking .rankingBox .card .cardBody .cardBodyStats .cardBodyStatsTxt{
+.ranking .rankingCarrosel .card .cardBody .cardBodyStats .cardBodyStatsTxt{
     display: flex;
     flex-direction: column;
     margin-left: 5px;
@@ -329,9 +326,265 @@
     margin-bottom: 6px;
     margin-left: 26px;
 }
+/*===tela de 1160 para baixo/ config===*/
+@media(max-width: 1160px){
+    /*===header===*/
+    .header .carouselDesktop{
+        display: none;
+    }
+    .boxLinks .box1234{
+        display: none;
+    }
+    .linksTop img{
+        display: none;
+    }
+    .linksTop a{
+        margin-top: 10px;
+    }
+    .header .carouselMobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 58px;
+        background: url(img/mobile/bg_md.png) top center;
+        text-align: center; 
+    }
+    .boxLinks .boxLogoMobile{
+        display: flex;
+        justify-content: center;
+        margin-top: -85px;
+    }
+    .boxLinks .boxLogoMobile img{
+        z-index: 9;
+    }
+    /*===infoVotodoacao===*/
+    .infoVotodoacao .info hr{
+        display: none;
+    }
+    .infoVotodoacao .info p{
+        display: none;
+    }
+    .infoVotodoacao .info .icons p{
+        display: flex;
+    }
+    .infoVotodoacao .info .icons a{
+        margin-right: -6px;
+    }
+    .infoVotodoacao .info .icons{
+        margin-top: 10px;
+        margin-right: -28px;
+    }
+    .infoVotodoacao{
+        flex-direction: column-reverse;
+    }
+}
+/*===tela de 1022 para baixo/ config===*/
+@media(max-width: 1022px){
+    .guerra{
+        background: none;
+        background-color: #F8F8F8;
+
+    }
+    .guerra h5{
+         color: #FF4E1A !important;
+    }
+    .guerra .guerraBox .chibi{
+        display: none;
+    }
+    .cardGuerra{
+        box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 20%);
+        border-radius: 0.5rem !important;
+        width: 250px !important;
+        height: 240px !important;
+        justify-content: center !important;
+        margin: 25px 10px 35px 10px !important;
+    }
+    .cardGuerraInterno{
+        margin: 0 !important;
+    }
+    .estatistica{
+        display: none;
+    }
+    .footerBox1Sociais{
+        display: none;
+    }
+}
+/*===tela de 1000px para baixo/ config===*/
+@media(max-width: 1000px){
+    .footerBox1Sobre{
+        width: 35% !important;
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+    .footerBox1Raking{
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+    .footerBox1 img{
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+}
+/*===tela de 770px para baixo/ config===*/
+@media(max-width: 770px){
+    .linksTop{
+        display: none;
+    }
+    .header{
+        margin-top: -112px !important;
+    }
+    .buttonSlidebar{
+        display: flex;
+        justify-content: flex-end;
+        margin: 15px 15px 0 0;
+    }
+    .buttonSlidebar button{
+        z-index: 11!important;
+    }
+    /*===slideBody===*/
+    .header_logo{
+        margin: 50px 0 10px 10px;
+    }
+    #sidebar{
+        background-color: rgb(245, 169, 6);
+    }
+    .slideBody{
+        display: flex;
+        flex-direction: column;
+        padding-top: 3px;
+    }
+    .slideBody a{
+        margin: 10px 0 0 20px;
+        color: #000000;
+        font-weight: 600;
+    }
+    .slideBody a:nth-child(6):hover{
+        opacity: 0.6;
+    }
+    .sidebar .slideBody a:hover{
+        text-decoration: none;
+        color: #FF4E1A;
+        transition: 0.6s;
+    }
+}
+/*===tela de 770px para baixo/ config===*/
+@media(max-width: 720px){
+
+    .footerBox1Sobre{
+        display: none;
+    }
+    .footer .footerBox1 .footer_chibi{
+        margin-right: 10% !important; 
+        width: 25%;
+    }
+    .footer .footerBox1 .footerBox1Raking{ 
+        font-size: 90%;
+        width: 45%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .footer .footerBox1 .footerBox1Raking p{ 
+        font-size: 140%
+    }
+
+}
+/*===tela de 600px para baixo/ config===*/
+@media(max-width: 600px){
+    .header .carouselMobile .chibi{
+        width: 400px;
+    }
+    .boxLinks .boxLogoMobile .logo_mobile{
+        width: 400px;
+    }
+    .infoVotodoacao .info .icons img{
+        width: 70%;
+    }
+    .infoVotodoacao .info .icons a{
+        margin-right: -16px;
+    }
+    .infoVotodoacao .info .icons{
+        margin-left: -10px !important;
+    }
+    .infoVotodoacao .info .icons .jogadoresServidor{
+        width: 30%;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .infoVotodoacao .Votodoacao button{
+        width: 178px; 
+        height: 145px; 
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .infoVotodoacao .Votodoacao button img{
+        width: 178px; 
+        height: 145px; 
+    }
+    .ranking .card p{
+        font-size: 70%;
+    }
+    .ranking .rankingCarrosel .card .cardBody .RankingChar{
+        width: 40px !important;
+    }
+    .ranking .rankingCarrosel .card .cardBody .cardBody3Stats .cardBodyStats .cardBodyStatsImg img{
+        width: 20px !important;
+    }
+    .ranking .rankingCarrosel .card .cardBody #cardBody3Stats{
+        height: 97px !important;
+    }
+    .cardGuerra{
+        width: 200px !important;
+        height: 210px !important;
+        margin: 25px 5px 35px 5px !important;
+    } 
+    .cardGuerra .cardGuerraInterno img:nth-child(1){
+        width: 60%; 
+    }
+    .footerBox2 .footerBox2Logo{
+        display: none !important;
+    }
+    .footerBox2 .footerBox2txt{
+        display: flex;
+        width: 100% !important;
+        align-items: center;
+    }
+    .footerBox2 .footerBox2txt p{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+@media(max-width: 466px){
+    .footer .footerBox1 .footer_chibi{
+        width: 40%;
+        height: 40%;
+        margin-right: 5px;
+    }
+    .footer .footerBox1Raking{
+        font-size: 80%;
+        width: 60%;
+        margin-left: -25px !important;
+    }
+    .footer .footerBox1Raking p{
+        font-size: 140% !important;
+    }
+}
+@media(max-width: 424px){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*===slidebar config===*/
-
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;
@@ -366,7 +619,7 @@ body {
     text-decoration: none;
 }
 #sidebar .slideBody a:hover{
-    color: #00D9D9;
+    color: #FF4E1A;
 }
 
 #sidebar.active {
@@ -378,7 +631,7 @@ body {
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: #7386D5;
+    background: #f76402;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -402,6 +655,7 @@ body {
     z-index: 998;
     opacity: 0;
     transition: all 0.5s ease-in-out;
+    margin-top: -30px;
 }
 .overlay.active {
     display: block;

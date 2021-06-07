@@ -7,6 +7,7 @@
     <title>Ragnarok</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
@@ -25,6 +26,32 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
+    <!-- sidebar -->
+    <nav id="sidebar">
+        <div class="sidebarHeader">
+            <div class="sidebar-header">
+                <img src="img/header_logo.png" class="header_logo" style="width: 170px;">
+            </div>
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+        </div>
+        <div class="slideBody">
+            <a href="#">INÍCIO</a>
+            <a href="#">INFORMAÇÔES</a>
+            <a href="#">DOWNLOAD</a>
+            <a href="#">FÓRUM</a>
+            <a href="#">REGISTRAR</a>
+            <a href="#"
+                style="background-color: #FF4E1A; color: white; padding: 4px 28px 4px 28px; border-radius: 1.4rem; width: 100px;">LOGIN</a>
+        </div>
+    </nav><!-- buttonSlidebar -->
+    <div class="buttonSlidebar">
+        <button type="button" id="sidebarCollapse" class="btn btn-dark">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+    </div>
     <!-- linksTop -->
     <div class="linksTop">
         <img src="img/header_logo.png" class="header_logo" style="margin-right: 160px;">
@@ -56,13 +83,13 @@
         <div id="controle" class="carouselMobile carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active carrosselSlid">
-                    <img class="chibi" src="img/slide01.png" alt="slide01">
+                    <img class="chibi" src="img/slideMobile01.png" alt="slide01">
                 </div>
                 <div class="carousel-item carrosselSlid">
-                    <img class="chibi" src="img/slide01.png" alt="slide01">
+                    <img class="chibi" src="img/slideMobile02.png" alt="slide01">
                 </div>
                 <div class="carousel-item carrosselSlid">
-                    <img class="chibi" src="img/slide01.png" alt="slide01">
+                    <img class="chibi" src="img/slideMobile03.png" alt="slide01">
                 </div>
             </div>
         </div>
@@ -108,7 +135,7 @@
             </div>
         </div>
         <div class="boxLogoMobile">
-            <img src="img/mobile/logo_mobile.png" width="300" class="logo_mobile">
+            <img src="img/mobile/logo_mobile.png" width="460" class="logo_mobile">
         </div>
     </div>
     <!-- infoVotodoacao -->
@@ -149,7 +176,7 @@
     <!-- loja -->
     <div class="loja">
         <h5 style="padding: 20px 0 15px 0; font-weight: 700; color: #fd3f05;">LOJA</h5>
-        <div class="lojaSlide owl-carousel">
+        <div class="lojaCarrosel owl-carousel owl-theme col-lg-8 col-md-10">
             <div class="carrosselItem">
                 <img src="img/Loja/visual01.bmp" alt="visual01">
                 <h6>LOREM IPSUM</h6>
@@ -163,76 +190,58 @@
                 <strong>1.908 GP</strong>
             </div>
             <div class="carrosselItem">
-
                 <img src="img/Loja/visual03.bmp" alt="visual03">
                 <h6>LOREM IPSUM</h6>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.</p>
                 <strong>1.908 GP</strong>
-
             </div>
             <div class="carrosselItem">
-
                 <img src="img/Loja/visual04.bmp" alt="visual04">
                 <h6>LOREM IPSUM</h6>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.</p>
                 <strong>1.908 GP</strong>
-
             </div>
             <div class="carrosselItem">
-
                 <img src="img/Loja/visual05.bmp" alt="visual05">
                 <h6>LOREM IPSUM</h6>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.</p>
                 <strong>1.908 GP</strong>
-
             </div>
             <div class="carrosselItem">
-
                 <img src="img/Loja/visual06.bmp" alt="visual06">
                 <h6>LOREM IPSUM</h6>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.</p>
                 <strong>1.908 GP</strong>
-
             </div>
             <div class="carrosselItem">
-
                 <img src="img/Loja/visual07.bmp" alt="visual07">
                 <h6>LOREM IPSUM</h6>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.</p>
                 <strong>1.908 GP</strong>
-
             </div>
             <div class="carrosselItem">
-
                 <img src="img/Loja/visual08.bmp" alt="visual08">
                 <h6>LOREM IPSUM</h6>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.</p>
                 <strong>1.908 GP</strong>
-
             </div>
             <div class="carrosselItem">
-
                 <img src="img/Loja/visual09.bmp" alt="visual09">
                 <h6>LOREM IPSUM</h6>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.</p>
                 <strong>1.908 GP</strong>
-
             </div>
             <div class="carrosselItem">
-
                 <img src="img/Loja/visual010.bmp" alt="visual10">
                 <h6>LOREM IPSUM</h6>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.</p>
                 <strong>1.908 GP</strong>
-
             </div>
             <div class="carrosselItem">
-
                 <img src="img/Loja/visual011.bmp" alt="visual11">
                 <h6>LOREM IPSUM</h6>
                 <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.</p>
                 <strong>1.908 GP</strong>
-
             </div>
             <div class="carrosselItem">
                 <img src="img/Loja/visual012.bmp" alt="visual12">
@@ -245,16 +254,17 @@
     <!-- ranking -->
     <div class="ranking">
         <h5 style="margin: 25px 0 30px 0; color: #fd3f05; font-weight: 700;">RANKINGS</h5>
-        <div class="rankingBox" id="rankingDesktop">
+        <div class="rankingCarrosel owl-carousel owl-theme col-lg-8 col-md-10">
             <div class="card">
-                <p style="color: #fd3f05; font-weight: 700; margin-top: -25px;">GUERRA DO EMPERIUM</p>
+                <p style="color: #fd3f05; font-weight: 700;margin-top: 5px;">GUERRA DO EMPERIUM</p>
                 <p style="color: #fd3f05; font-weight: 700; margin: -6px 0 5px 0">(WOE)</p>
                 <div class="cardBody">
-                    <img src="img/Rankings/char.png" alt="char">
+                    <img class="RankingChar" src="img/Rankings/char.png" alt="char">
                     <div class="cardBody3Stats">
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/helmet.png" width="30" alt="helmet">
+                                <img src="img/Rankings/helmet.png" style="width: 30px;" style="width: 30px;"
+                                    alt="helmet">
                             </div>
                             <div class="cardBodyStatsTxt">
                                 <p style="color: #fcb22a; font-weight: 600;">Nome:</p>
@@ -263,7 +273,7 @@
                         </div>
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/swords.png" width="30" alt="swords">
+                                <img src="img/Rankings/swords.png" style="width: 30px;" alt="swords">
                             </div>
                             <div class="cardBodyStatsTxt">
                                 <p style="color: #fcb22a; font-weight: 600;">Eliminação:</p>
@@ -272,7 +282,7 @@
                         </div>
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/skeleton.png" width="30" alt="skeleton">
+                                <img src="img/Rankings/skeleton.png" style="width: 30px;" alt="skeleton">
                             </div>
                             <div class="cardBodyStatsTxt">
                                 <p style="color: #fcb22a; font-weight: 600;">Mortes:</p>
@@ -283,14 +293,14 @@
                 </div>
             </div>
             <div class="card">
-                <p style="color: #fd3f05; font-weight: 700; margin-top: -25px;">JOGADOR VS JOGADOR</p>
+                <p style="color: #fd3f05; font-weight: 700;margin-top: 5px;">JOGADOR VS JOGADOR</p>
                 <p style="color: #fd3f05; font-weight: 700; margin: -6px 0 5px 0">(WOE)</p>
                 <div class="cardBody">
-                    <img src="img/Rankings/char.png" alt="char">
+                    <img class="RankingChar" src="img/Rankings/char.png" alt="char">
                     <div class="cardBody3Stats">
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/helmet.png" width="30" alt="helmet">
+                                <img src="img/Rankings/helmet.png" style="width: 30px;" alt="helmet">
                             </div>
                             <div class="cardBodyStatsTxt">
                                 <p style="color: #fcb22a; font-weight: 600;">Nome:</p>
@@ -299,7 +309,7 @@
                         </div>
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/swords.png" width="30" alt="swords">
+                                <img src="img/Rankings/swords.png" style="width: 30px;" alt="swords">
                             </div>
                             <div class="cardBodyStatsTxt">
                                 <p style="color: #fcb22a; font-weight: 600;">Eliminação:</p>
@@ -308,7 +318,7 @@
                         </div>
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/skeleton.png" width="30" alt="skeleton">
+                                <img src="img/Rankings/skeleton.png" style="width: 30px;" alt="skeleton">
                             </div>
                             <div class="cardBodyStatsTxt">
                                 <p style="color: #fcb22a; font-weight: 600;">Mortes:</p>
@@ -319,14 +329,14 @@
                 </div>
             </div>
             <div class="card">
-                <p style="color: #fd3f05; font-weight: 700; margin-top: -25px;">BATALHA CAMPAL</p>
+                <p style="color: #fd3f05; font-weight: 700;margin-top: 5px;">BATALHA CAMPAL</p>
                 <p style="color: #fd3f05; font-weight: 700; margin: -6px 0 5px 0">(WOE)</p>
                 <div class="cardBody">
-                    <img src="img/Rankings/char.png" alt="char">
+                    <img  class="RankingChar" src="img/Rankings/char.png" alt="char">
                     <div class="cardBody3Stats">
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/helmet.png" width="30" alt="helmet">
+                                <img src="img/Rankings/helmet.png" style="width: 30px;" alt="helmet">
                             </div>
                             <div class="cardBodyStatsTxt">
                                 <p style="color: #fcb22a; font-weight: 600;">Nome:</p>
@@ -335,7 +345,7 @@
                         </div>
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/swords.png" width="30" alt="swords">
+                                <img src="img/Rankings/swords.png" style="width: 30px;" alt="swords">
                             </div>
                             <div class="cardBodyStatsTxt">
                                 <p style="color: #fcb22a; font-weight: 600;">Eliminação:</p>
@@ -344,7 +354,7 @@
                         </div>
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/skeleton.png" width="30" alt="skeleton">
+                                <img src="img/Rankings/skeleton.png" style="width: 30px;" alt="skeleton">
                             </div>
                             <div class="cardBodyStatsTxt">
                                 <p style="color: #fcb22a; font-weight: 600;">Mortes:</p>
@@ -355,14 +365,14 @@
                 </div>
             </div>
             <div class="card">
-                <p style="color: #fd3f05; font-weight: 700; margin-top: -25px;">MONSTRO VS JOGADOR</p>
+                <p style="color: #fd3f05; font-weight: 700;margin-top: 5px;">MONSTRO VS JOGADOR</p>
                 <p style="color: #fd3f05; font-weight: 700; margin: -6px 0 5px 0">(WOE)</p>
                 <div class="cardBody">
-                    <img src="img/Rankings/char.png" alt="char">
-                    <div class="cardBody3Stats" style="height: 140px;">
+                    <img class="RankingChar" src="img/Rankings/char.png" alt="char">
+                    <div class="cardBody3Stats" style="height: 145px;" id="cardBody3Stats">
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/helmet.png" width="30" alt="helmet">
+                                <img src="img/Rankings/helmet.png" style="width: 30px;" alt="helmet">
                             </div>
                             <div class="cardBodyStatsTxt">
                                 <p style="color: #fcb22a; font-weight: 600;">Nome:</p>
@@ -371,7 +381,7 @@
                         </div>
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
-                                <img src="img/Rankings/skull.png" width="30" alt="swords">
+                                <img src="img/Rankings/skull.png" style="width: 30px;" alt="swords">
                             </div>
                             <div class="cardBodyStatsTxt">
                                 <p style="color: #fcb22a; font-weight: 600;">Eliminação:</p>
@@ -383,9 +393,7 @@
                 </div>
             </div>
         </div>
-        <div class="ranking" id="rankingMobile">
 
-        </div>
     </div>
     <!-- guerra -->
     <div class="guerra">
@@ -394,7 +402,7 @@
             <div class="cardGuerra" style="margin-right: -100px;">
                 <div class="cardGuerraInterno" style="margin-left: 80px;">
                     <img src="img/flag.png" alt="flag" style="margin-top: -50px;">
-                    <img src="img/emblem01.png" alt="emblem01" style="margin-top: -120px;">
+                    <img src ="img/emblem01.png" alt="emblem01" style="margin-top: -120px;">
                     <div style="display: flex;">
                         <p style="color: #fd3f05;font-weight: 500; margin:100px 5px 0 0;">CASTELO:</p>
                         <p style="margin-top: 100px;">Kharinc</p>
@@ -482,7 +490,7 @@
         <div class="footerBox2">
             <div class="footerBox2Logo">
                 <a href=""><img src="img/footer_rbs.png" class="footer_rbs"></a>
-                
+
             </div>
             <div class="footerBox2txt">
                 <p>Copyright © 2020</p>
@@ -491,18 +499,58 @@
             </div>
         </div>
     </div>
-    <!-- carousel owl -->
+    <!-- carousel owl rankingCarrosel-->
+    <!-- carousel owl lojaCarrosel-->
     <script>
-        $(document).ready(function () {
-            var owl = $('.lojaSlide');
-            owl.owlCarousel({
-                items: 6,
-                loop: true,
-                margin: 0,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true
-            });
+        $('.rankingCarrosel').owlCarousel({
+            responsiveClass: true,
+            responsive: {
+                375: {
+                    items: 2,
+                    margin: 10,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: true,
+                    loop: true,
+                    nav: false,
+                },
+                1160: {
+                    items: 3,
+                    margin: 0,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: true,
+                    loop: true,
+                    nav: false,
+                },
+                1611: {
+                    items: 4,
+                    margin: 30,
+                    nav: false,
+                },
+            }
+        });
+        $('.lojaCarrosel').owlCarousel({
+            loop: true,
+            margin: 0,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            responsive: {
+                375: {
+                    items: 2,
+                    nav: false,
+                },
+                768: {
+                    items: 3,
+                    nav: false,
+                },
+                1160: {
+                    items: 6,
+                    nav: false,
+                },
+            }
         })
     </script>
     <!-- slidebar script -->
