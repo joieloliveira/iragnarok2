@@ -735,3 +735,64 @@ body {
     top: 0;
     right: 0;
 }
+/* ---------------------------------------------------
+    painelCrud modal
+----------------------------------------------------- */
+.painelCrud{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 370px;
+    margin-right: 5px;
+    padding: 15px 20px;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
+.painelCrud P:nth-child(1){
+    font-size: 160%;
+    font-weight: bolder;
+}
+.painelCrud P:nth-child(2){
+    font-size: 120%;
+    margin-top: -30px;
+    color: #524282;
+    font-weight: 600;
+}
+.painelCrud .inputText{
+    background-color: #F0F0F0 ;
+    color: #A1A1A1 ;
+    margin-bottom: 10px;
+    width: 330px;
+    height: 32px;
+    border-radius: 0.5rem;
+    padding-left: 10px;
+    border-style: none;
+}
+.painelCrud .buton{
+    outline: none;
+    background-color: #f76402;
+    color: white;
+    width: 330px;
+    height: 32px;
+    font-weight: 600;
+    border-radius: 2rem;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    border-style: none;
+    font-size: 120%;
+}
+.painelCrud .buton:hover{
+    background-color: #1D152D;
+    transition: 1s;
+}
+.painelCrud a{
+    color: black;
+    align-self: flex-end;
+    font-size: 80%;
+    text-decoration: none;
+}
+.painelCrud P:nth-child(1){
+    color: black;
+}

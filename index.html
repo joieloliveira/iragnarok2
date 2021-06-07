@@ -26,6 +26,31 @@
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ACESSE SUA CONTA</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="display: flex; justify-content: center;">
+                    <div class="painelCrud">
+                        </form>
+                        <input class="inputText" type="text" name="Usuário" placeholder="Usuário" />
+                        <input class="inputText" type="text" name="Senha" placeholder="Senha" />
+                        <button class="buton" type="submit">LOGIN</button>
+                        </form>
+                        <button class="buton" type="submit">REGISTRAR</button>
+                        <a href="#">ESQUECEU SUA SENHA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="overlay"></div>
     <!-- sidebar -->
     <nav id="sidebar">
@@ -44,7 +69,7 @@
             <a href="#">FÓRUM</a>
             <a href="#">REGISTRAR</a>
             <a href="#"
-                style="background-color: #FF4E1A; color: white; padding: 4px 28px 4px 28px; border-radius: 1.4rem; width: 100px;">LOGIN</a>
+                style="background-color: #FF4E1A; color: white; padding: 4px 28px 4px 28px; border-radius: 1.4rem; width: 100px;" data-toggle="modal" data-target="#exampleModal">LOGIN</a>
         </div>
     </nav><!-- buttonSlidebar -->
     <div class="buttonSlidebar">
@@ -61,7 +86,7 @@
         <a href="#">FÓRUM</a>
         <a href="#">REGISTRAR</a>
         <a href="#"
-            style="background-color: #FF4E1A; color: white; padding: 4px 28px 4px 28px; border-radius: 1.4rem;">LOGIN</a>
+            style="background-color: #FF4E1A; color: white; padding: 4px 28px 4px 28px; border-radius: 1.4rem;" data-toggle="modal" data-target="#exampleModal">LOGIN</a>
     </div>
     <!-- header -->
     <div class="header">
@@ -332,7 +357,7 @@
                 <p style="color: #fd3f05; font-weight: 700;margin-top: 5px;">BATALHA CAMPAL</p>
                 <p style="color: #fd3f05; font-weight: 700; margin: -6px 0 5px 0">(WOE)</p>
                 <div class="cardBody">
-                    <img  class="RankingChar" src="img/Rankings/char.png" alt="char">
+                    <img class="RankingChar" src="img/Rankings/char.png" alt="char">
                     <div class="cardBody3Stats">
                         <div class="cardBodyStats">
                             <div class="cardBodyStatsImg">
@@ -402,7 +427,7 @@
             <div class="cardGuerra" style="margin-right: -100px;">
                 <div class="cardGuerraInterno" style="margin-left: 80px;">
                     <img src="img/flag.png" alt="flag" style="margin-top: -50px;">
-                    <img src ="img/emblem01.png" alt="emblem01" style="margin-top: -120px;">
+                    <img src="img/emblem01.png" alt="emblem01" style="margin-top: -120px;">
                     <div style="display: flex;" class="textoGuerra" id="textoGuerra">
                         <p style="color: #fd3f05;font-weight: 500; margin:100px 5px 0 0;">CASTELO:</p>
                         <p style="margin-top: 100px;">Kharinc</p>
