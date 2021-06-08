@@ -630,18 +630,6 @@
     .footer .footerBox1Raking{
         margin-bottom: 20px !important;
     }
-    .painelCrud{
-        width: 330px !important;
-    }
-    .painelCrud .inputText{
-        width: 310px !important;
-    }
-    .painelCrud .buton{
-        width: 310px !important;
-    }
-
-
-
 }
 /*===slidebar config===*/
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
@@ -747,11 +735,9 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 370px;
+    width: 100%;
     margin-right: 5px;
     padding: 15px 20px;
-    border-radius: 0.8rem;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);;
     background-color: rgb(255, 255, 255);
     z-index: 2;
 }
@@ -769,7 +755,7 @@ body {
     background-color: #F0F0F0 ;
     color: #A1A1A1 ;
     margin-bottom: 10px;
-    width: 330px;
+    width: 100%;
     height: 32px;
     border-radius: 0.5rem;
     padding-left: 10px;
@@ -779,7 +765,7 @@ body {
     outline: none;
     background-color: #f76402;
     color: white;
-    width: 330px;
+    width: 100%;
     height: 32px;
     font-weight: 600;
     border-radius: 2rem;
@@ -794,9 +780,13 @@ body {
 }
 .painelCrud a{
     color: black;
-    align-self: flex-end;
+    float: right;
     font-size: 80%;
     text-decoration: none !important;
+}
+.painelCrud a:hover{
+    color: #f76402;
+    transition: 0.8s;
 }
 .painelCrud P:nth-child(1){
     color: black;
