@@ -575,6 +575,12 @@
     .boxLinks .boxLogoMobile .logo_mobile{
         width: 350px;
     }
+    .infoVotodoacao .Votodoacao{
+        margin-left: -10px !important; 
+    }
+    .infoVotodoacao .info .icons{
+        margin-left: -24px !important;
+    }
     .infoVotodoacao .Votodoacao button{
         width: 168px; 
         height: 135px; 
@@ -596,7 +602,7 @@
         font-size: 140% !important;
     }
     .cardGuerra{
-        width: 175px !important;
+        width: 170px !important;
         height: 185px !important;
     }
     .cardGuerra .cardGuerraInterno p{
@@ -625,19 +631,6 @@
         margin-bottom: 20px !important;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*===slidebar config===*/
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
