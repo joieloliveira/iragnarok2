@@ -77,7 +77,7 @@
         </button>
     </div>
     <!-- linksTop -->
-    <div class="linksTop">
+    <header class="linksTop navbar fixed-top">
         <img src="img/header_logo.png" class="header_logo" style="margin-right: 160px;">
         <a href="#">INÍCIO</a>
         <a href="#">INFORMAÇÔES</a>
@@ -86,7 +86,7 @@
         <a href="#">REGISTRAR</a>
         <a href="#" style="background-color: #FF4E1A; color: white; padding: 4px 28px 4px 28px; border-radius: 1.4rem;"
             data-toggle="modal" data-target="#exampleModal">LOGIN</a>
-    </div>
+    </header>
     <!-- header -->
     <div class="header">
         <!-- The slideshow desktop tablet-->
@@ -585,6 +585,13 @@
             }
         })
     </script>
+    <!-- scroll efect on header -->
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("stick", window.scrollY > 0);
+        })
+    </script> 
     <!-- slidebar script -->
     <script type="text/javascript">
         $(document).ready(function () {

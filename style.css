@@ -14,16 +14,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    background-color: white;
-    padding-top: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     left: 0;
     top: 0;
     width: 100%;
     z-index: 10;
+    transition: 0.2s;
+}
+.linksTop.stick{
+    background-color: white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    transition: 0.5s;
 }
 .linksTop a{
     margin-left: 45px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
     color: #000000;
     font-weight: 600;
 }
@@ -44,7 +52,7 @@
     align-items: center;
     justify-content: center;
     background: url(img/header_banner.png) top center;
-    margin-top: 58px;
+    margin-top: 55px;
 }
 .header .carouselDesktop .carousel-item{
     text-align:center;
@@ -377,6 +385,16 @@
     .infoVotodoacao{
         flex-direction: column-reverse;
     }
+    .linksTop{
+        padding-top: 13px !important;
+        padding-bottom: 13px !important; 
+    }
+    .linksTop.stick{
+        background-color: white;
+        transition: 0.5s;
+        padding-top: 2px !important;
+        padding-bottom: 2px !important; 
+    }
 }
 /*===tela de 1022 para baixo/ config===*/
 @media(max-width: 1022px){
@@ -428,7 +446,7 @@
 /*===tela de 770px para baixo/ config===*/
 @media(max-width: 770px){
     .linksTop{
-        display: none;
+        display: none !important;
     }
     .header{
         margin-top: -112px !important;
