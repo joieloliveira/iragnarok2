@@ -9,11 +9,11 @@
 .buttonSlidebar{
     display: none;
 }
-/*===linksTop===*/
-.linksTop{
+/*===navbar===*/
+.navbar{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center !important;
     padding-top: 5px;
     padding-bottom: 5px;
     left: 0;
@@ -22,32 +22,45 @@
     z-index: 10;
     transition: 0.2s;
 }
-.linksTop.stick{
+.navbar.stick{
     background-color: white;
     padding-top: 1px;
     padding-bottom: 1px;
     transition: 0.5s;
 }
-.linksTop.stick .header_logo{
+.navbar.stick .header_logo{
     width: 200px;
     transition: 0.8s !important;
 }
-.linksTop a{
+.navbar a{
     margin-left: 45px;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     color: #000000;
     font-weight: 600;
 }
-.linksTop a:nth-child(7):hover{
+.navbar a:nth-child(7):hover{
     opacity: 0.6;
 }
-.linksTop a:hover{
+.navbar a:hover{
     text-decoration: none;
     color: #FF4E1A;
     transition: 0.6s;
 }
 /*===header===*/
+#sidebar .slideBody .buttonloginSlidbar{
+    background-color: #FF4E1A;
+    color: white;
+    padding: 4px 28px 4px 28px;
+    border-radius: 1.4rem;
+    width: 100px;
+}
+.navbar .buttonloginLinkstop{
+    background-color: #FF4E1A;
+    color: white;
+    padding: 4px 28px 4px 28px;
+    border-radius: 1.4rem;
+}
 .header .carouselMobile{
     display: none;
 }
@@ -56,10 +69,12 @@
     align-items: center;
     justify-content: center;
     background: url(img/header_banner.png) top center;
-    margin-top: 64px;
+    background-size: 1920px 409px;
+    margin-top: 55px;
 }
 .header .carouselDesktop .carousel-item{
     text-align:center;
+    padding-top: 9px;
 }
 /*===box1234===*/
 .boxLinks .boxLogoMobile{
@@ -82,10 +97,32 @@
     box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 20%);
     z-index: 9;
 }
+.boxLinks .box1234 .box1234Links .box1234LinksP1{
+    color: #FF4E1A;
+    font-size: 300%;
+    font-weight: 700;
+    margin-top:4px
+}
+.boxLinks .box1234 .box1234Links .pontoQ{
+    width: 10px;
+    height: 10px;
+    background-color: #FF4E1A;
+    margin: 0 12px -20px 10px;
+}
 .boxLinks .box1234 .box1234Links .boxtxt{
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+.boxLinks .box1234 .box1234Links .boxtxt .boxtxtP1{
+    margin: 0 0 -3px 0;
+    font-weight: 700;
+    font-size: 100%;
+}
+.boxLinks .box1234 .box1234Links .boxtxt .boxtxtP2{
+    margin: -3px 0 0 0 ;
+    opacity: 0.5;
+    font-size: 90%;
 }
 /*===infoVotodoacao===*/
 .infoVotodoacao{
@@ -114,10 +151,38 @@
     transition: 1s;
     cursor: pointer
 }
+.infoVotodoacao .info .infoP1{
+    margin: -11px 0 -11px 0;
+}
+.infoVotodoacao .info .infoImg{
+    margin: -3px 5px 0 0;
+}
 .infoVotodoacao .info .icons{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.infoVotodoacao .info .icons .jogadoresServidor .jogadoresServidorP1{
+    margin: -4px 0 -4px 0;
+    color: #fd3f05;
+    font-weight: 700;
+    font-size: 80%;
+}
+.infoVotodoacao .info .icons .jogadoresServidor .jogadoresServidorP2{
+    margin: -4px 0 -4px 0;
+    font-size: 140%;
+    font-weight: 800;
+}
+.infoVotodoacao .info .icons .jogadoresServidor .jogadoresServidorP3{
+    margin: -4px 0 -4px 0;
+    color: #fcb22a;
+    font-weight: 700
+}
+.infoVotodoacao .info .icons .jogadoresServidor .jogadoresServidorP4{
+    margin: -4px 0 -4px 0;
+    color: #A3D900;
+    font-size: 140%;
+    font-weight: 800;
 }
 .infoVotodoacao .info .icons .jogadoresServidor{
     display: flex;
@@ -143,6 +208,11 @@
     margin: 50px 0 0 0;
     padding-bottom: 40px;
 }
+.loja .lojaH5{
+    padding: 20px 0 15px 0;
+    font-weight: 700;
+    color: #fd3f05;
+}
 .carrosselItem{
     display: flex;
     align-items: center;
@@ -166,10 +236,25 @@
     flex-direction: column;
     padding-bottom: 40px;
 }
+.ranking .rankingH5{
+    margin: 25px 0 30px 0;
+    color: #fd3f05;
+    font-weight: 700;
+}
 .ranking .rankingCarrosel{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.ranking .rankingCarrosel .card .cardP1{
+    color: #fd3f05;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.ranking .rankingCarrosel .card .cardP2{
+    color: #fd3f05;
+    font-weight: 700;
+    margin: -6px 0 5px 0
 }
 .ranking .rankingCarrosel .card{
     display: flex;
@@ -179,6 +264,16 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 6px;
     overflow: hidden;
     margin: 0 5px 0 5px;
+}
+.ranking .rankingCarrosel .card .cardBody .cardBody3Stats .cardBodyStatsImg img{
+    width: 30px;
+}
+.ranking .rankingCarrosel .card .cardBody .cardBody3Stats .cardBodyStatsTxt .cardBodyStatsTxtP1{
+    color: #fcb22a;
+    font-weight: 600;
+}
+.ranking .rankingCarrosel .card .cardBody .cardBody3Stats .cardBodyStatsTxt .cardBodyStatsTxtP2{
+    opacity: 0.6;
 }
 .ranking .rankingCarrosel .card p{
     margin: 0;
@@ -215,6 +310,10 @@
     justify-content: center;
     flex-direction: column;
 }
+.guerra h5{
+    color: white;
+    margin: 25px 0 30px 0;
+}
 .guerra .guerraBox{
     display: flex;
     align-items: center;
@@ -229,11 +328,36 @@
     height: 200px;
     background-color: white;
     margin-bottom: -40px;
+
 }
 .guerra .guerraBox .cardGuerra .cardGuerraInterno{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+.guerra .guerraBox .cardGuerra .cardGuerraInterno .cardGuerraInternoP1{
+    color: #fd3f05;
+    font-weight: 500;
+    margin:100px 5px 0 0;
+}
+.guerra .guerraBox .cardGuerra .cardGuerraInterno .cardGuerraInternoP2{
+    margin-top: 100px;
+}
+.guerra .guerraBox .cardGuerra .cardGuerraInterno .cardGuerraInternoP3{
+    color: #fd3f05;
+    font-weight: 500;
+    margin-right: 5px;
+}
+.guerra .guerraBox .cardGuerra .cardGuerraInterno .cardGuerraInternoP4{
+    color: #fd3f05;
+    font-weight: 500;
+    margin-right: 5px;
+}
+.guerra .guerraBox .cardGuerra .cardGuerraInterno .cardGuerraInternoFlag{
+    margin-top: -50px;
+}
+.guerra .guerraBox .cardGuerra .cardGuerraInterno .cardGuerraInternoEmblem01{
+    margin-top: -120px;
 }
 .guerra .guerraBox .cardGuerra p{
     margin: 0;
@@ -252,6 +376,19 @@
     flex-direction: column;
     margin: 0 80px 0 80px;
 }
+.estatistica .estatisticaBox p:nth-child(2){
+    margin: 16px 0 -5px 0;
+    font-size: 80%;
+}
+.estatistica .estatisticaBox p:nth-child(3){
+    font-size: 120%;
+    font-weight: 800;
+}
+.estatistica .estatisticaBox .estatisticaBoxP1{
+    margin: -1px 0 -5px 0;
+    font-size: 80%;
+}
+
 .estatistica .estatisticaBox img{
     opacity: 0.3;
 }
@@ -272,10 +409,19 @@
     width: 15%;
     margin: 25px 20px 0 20px;
 }
+.footer .footerBox1 .footerBox1Sobre p:first-child{
+    font-weight: 800;
+    color:#fcb22a;
+}
 .footer .footerBox1 .footerBox1Raking{
     margin: 25px 20px 0 20px;
     display: flex;
     flex-direction: column;
+}
+.footer .footerBox1 .footerBox1Raking p:first-child{
+    font-weight: 800;
+    color:#fcb22a;
+    margin-bottom:10px;
 }
 .footer .footerBox1 .footerBox1Raking a{
     color: white;
@@ -288,6 +434,10 @@
 }
 .footer .footerBox1 .footerBox1Sociais{
     margin: 25px 0 0 80px;
+}
+.footer .footerBox1 .footerBox1Sociais p:first-child{
+    font-weight: 800;
+    color:#fcb22a;
 }
 .footer .footerBox1 .footerBox1Sociais img{
     margin: 5px
@@ -347,19 +497,19 @@
     .boxLinks .box1234{
         display: none;
     }
-    .linksTop img{
+    .navbar img{
         display: none;
     }
-    .linksTop a{
+    .navbar a{
         margin-top: 10px;
     }
     .header .carouselMobile{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 58px;
         background: url(img/mobile/bg_md.png) top center;
-        text-align: center; 
+        text-align: center;
+        margin-top: 42px;
     }
     .boxLinks .boxLogoMobile{
         display: flex;
@@ -389,11 +539,11 @@
     .infoVotodoacao{
         flex-direction: column-reverse;
     }
-    .linksTop{
+    .navbar{
         padding-top: 13px !important;
         padding-bottom: 13px !important; 
     }
-    .linksTop.stick{
+    .navbar.stick{
         background-color: white;
         transition: 0.5s;
         padding-top: 2px !important;
@@ -449,7 +599,7 @@
 }
 /*===tela de 770px para baixo/ config===*/
 @media(max-width: 770px){
-    .linksTop{
+    .navbar{
         display: none !important;
     }
     .header{
