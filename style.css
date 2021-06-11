@@ -41,13 +41,8 @@
 }
 .navbar a:nth-child(7):hover{
     opacity: 0.6;
+    color: white;
 }
-.navbar a:hover{
-    text-decoration: none;
-    color: #FF4E1A;
-    transition: 0.6s;
-}
-/*===header===*/
 #sidebar .slideBody .buttonloginSlidbar{
     background-color: #FF4E1A;
     color: white;
@@ -61,6 +56,12 @@
     padding: 4px 28px 4px 28px;
     border-radius: 1.4rem;
 }
+.navbar a:hover{
+    text-decoration: none;
+    color: #FF4E1A;
+    transition: 0.6s;
+}
+/*===header===*/
 .header .carouselMobile{
     display: none;
 }
@@ -795,6 +796,9 @@
     .cardGuerra .cardGuerraInterno img:nth-child(2){
         margin: 0 !important;
         margin-bottom: -10px !important
+    }
+    .guerra .guerraBox .cardGuerra .cardGuerraInterno .textoGuerra p:nth-child(2){
+        margin-left: 4px !important;
     }
     .footer .footerBox1Raking a{
         font-size: 80%;
